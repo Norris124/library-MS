@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+{% extends "index.html" %}
+{% load static %}
+{%block main_content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books to be Returned</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Books to be Returned</h1>
+    
+    <!-- Table to display borrowed books -->
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Borrower</th>
+                <th>Due Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Random borrowed books -->
+            <tr>
+                <td>To Kill a Mockingbird</td>
+                <td>John Doe</td>
+                <td>2024-10-15</td>
+            </tr>
+            <tr>
+                <td>The Great Gatsby</td>
+                <td>Jane Smith</td>
+                <td>2024-10-20</td>
+            </tr>
+            <tr>
+                <td>1984</td>
+                <td>Mark Johnson</td>
+                <td>2024-10-18</td>
+            </tr>
+            <tr>
+                <td>Harry Potter and the Sorcerer's Stone</td>
+                <td>Alice Williams</td>
+                <td>2024-10-12</td>
+            </tr>
+            <tr>
+                <td>The Hobbit</td>
+                <td>Bob Brown</td>
+                <td>2024-10-22</td>
+            </tr>
+            <tr>
+                <td>Pride and Prejudice</td>
+                <td>Emma Wilson</td>
+                <td>2024-10-17</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="footer">
+        &copy; 2024 Library Management System
+    </div>
+</div>
+
+</body>
+</html>
+{% endblock %}

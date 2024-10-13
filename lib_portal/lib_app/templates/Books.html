@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+{% extends "index.html" %}
+{% load static %}
+{%block main_content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Books</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Available Books</h1>
+    
+    <!-- Table to display random books -->
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Availability</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Random books -->
+            <tr>
+                <td>The Catcher in the Rye</td>
+                <td>J.D. Salinger</td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>To Kill a Mockingbird</td>
+                <td>Harper Lee</td>
+                <td>Borrowed</td>
+            </tr>
+            <tr>
+                <td>1984</td>
+                <td>George Orwell</td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>The Great Gatsby</td>
+                <td>F. Scott Fitzgerald</td>
+                <td>Borrowed</td>
+            </tr>
+            <tr>
+                <td>The Lord of the Rings</td>
+                <td>J.R.R. Tolkien</td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>Pride and Prejudice</td>
+                <td>Jane Austen</td>
+                <td>Available</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="footer">
+        &copy; 2024 Library Management System
+    </div>
+</div>
+
+</body>
+</html>
+{% endblock %}

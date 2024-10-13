@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <style>
+        .my_label {
+            color : black;
+            font-size : 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to our library</h1>
+    <form method = "POST" action = "/save">
+        {% csrf_token %}
+        <table>
+        
+        <tbody>
+            <tr>
+                <td><label class="my_label">Student name</label></td>
+                <td><input type="text" name ="student_name" ></td>
+            </tr>
+            
+            <tr>
+                <td><label class="my_label">Student ID</label></td>
+                <td><input type="text" name ="student_id" ></td>
+            </tr>
+            <tr>
+                <td colspan = "2"><button type = "submit" style = "display: block;margin-top: 15px;margin-bottom: 15px; font-size: 20px;">Save</button></td>
+            </tr>
+
+        </tbody>
+    </table>
+    
+    </form>
+</body>
+</html>
